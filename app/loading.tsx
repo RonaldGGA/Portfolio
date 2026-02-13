@@ -1,7 +1,6 @@
 export default function Loading() {
   return (
     <div className="min-h-screen bg-white dark:bg-navy">
-      {/* SKELETON HERO */}
       <section className="min-h-screen flex items-center pt-16">
         <div className="section-container">
           <div className="max-w-3xl animate-pulse">
@@ -21,7 +20,6 @@ export default function Loading() {
         </div>
       </section>
 
-      {/* SKELETON FEATURED PROJECT */}
       <section className="bg-slate-50 dark:bg-slate-900">
         <div className="section-container">
           <div className="h-8 w-48 bg-gray-300 dark:bg-slate-600 rounded mb-4 animate-pulse"></div>
@@ -52,7 +50,6 @@ export default function Loading() {
         </div>
       </section>
 
-      {/* SKELETON PROJECTS GRID */}
       <section className="section-container">
         <div className="h-8 w-48 bg-gray-300 dark:bg-slate-600 rounded mb-4 animate-pulse"></div>
         <div className="h-4 w-64 bg-gray-200 dark:bg-slate-700 rounded mb-12 animate-pulse"></div>
@@ -84,7 +81,6 @@ export default function Loading() {
         </div>
       </section>
 
-      {/* SKELETON SKILLS */}
       <section className="bg-slate-50 dark:bg-slate-900">
         <div className="section-container">
           <div className="h-8 w-48 bg-gray-300 dark:bg-slate-600 rounded mb-4 animate-pulse"></div>

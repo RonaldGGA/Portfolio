@@ -1,7 +1,5 @@
-/* app/globals.css */
 @import "tailwindcss";
 
-/* ✅ CONFIGURACIÓN DE COLORES PERSONALIZADOS - ESTA ES LA CLAVE */
 @theme {
   --color-navy: #0a192f;
   --color-slate: #112240;
@@ -9,22 +7,17 @@
   --color-aws-orange: #ff9900;
   --color-turquoise: #64ffda;
 
-  /* Tipografía */
   --font-sans: "Inter", system-ui, sans-serif;
 
-  /* Breakpoints (opcional) */
   --breakpoint-xs: 475px;
   --breakpoint-3xl: 1920px;
 
-  /* Espaciado personalizado (opcional) */
   --spacing-18: 4.5rem;
   --spacing-88: 22rem;
 
-  /* Bordes personalizados (opcional) */
   --radius-4xl: 2rem;
 }
 
-/* ✅ Tus estilos personalizados con @layer */
 @layer base {
   html {
     scroll-behavior: smooth;

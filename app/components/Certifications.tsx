@@ -1,7 +1,6 @@
 import { FiDownload } from "react-icons/fi";
 import AnimatedSection from "./AnimatedSection";
 
-// ✅ ARRAY DE CERTIFICACIONES – AHORA CON DESCARGA DIRECTA
 const certifications = [
   {
     id: 1,
