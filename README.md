@@ -1,19 +1,7 @@
-```markdown
-<a name="readme-top"></a>
-
-<!-- PROJECT SHIELDS -->
-[![LinkedIn][linkedin-shield]][https://linkedin.com/in/ronald-de-armas-8797082ab]
-[![GitHub][github-shield]][https://github.com/RonaldGGA]
-[![C1 Advanced][cambridge-shield]](#)
-[![AWS in progress][aws-shield]](#)
-
+`<a name="readme-top">
 <br />
 <div align="center">
-  <a href="https://github.com/RonaldGGA/portfolio">
-    <img src="public/favicon-32x32.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h1 align="center">♟️ Ronald González · Portfolio 2026</h1>
+   <h1 align="center">♟️ Ronald González · Portfolio 2026</h1>
 
   <p align="center">
     Self‑taught full‑stack developer, automation engineering student, and aspiring 
@@ -58,7 +46,7 @@ Oh, and I play chess, I survived the Cambridge CAE with a **193/210**, and I bui
 
 ## 🧰 **The Toolbox** (aka Tech Stack)
 
-This whole thing runs on a carefully crafted stack — nothing overkill, just the good stuff (I can not write them all here, these are a few of them):
+This whole thing runs on a carefully crafted stack — nothing overkill, just the good stuff:
 
 | Area               | Technologies                                                                                  |
 | ------------------ | --------------------------------------------------------------------------------------------- |
@@ -68,7 +56,6 @@ This whole thing runs on a carefully crafted stack — nothing overkill, just th
 | **Icons**          | React Icons (Feather)                                                                         |
 | **Deployment**     | Vercel · Edge Network · Automatic CI/CD                                                      |
 | **Code Quality**   | ESLint · Prettier · TypeScript strict mode                                                   |
-
 
 <p align="right">(<a href="#readme-top">⬆ back to sheet music</a>)</p>
 
@@ -84,36 +71,6 @@ This whole thing runs on a carefully crafted stack — nothing overkill, just th
 
 Everything is built with **progressive enhancement**, **accessibility** in mind, and a touch of Caribbean colour.
 
-<p align="right">(<a href="#readme-top">⬆ back to top</a>)</p>
-
----
-
-## 🗺️ **Project Map** (for the curious ones)
-
-```
-portfolio/
-├── app/                    # Next.js App Router
-│   ├── layout.tsx          # Root layout + metadata
-│   ├── page.tsx           # Homepage (assembles all components)
-│   ├── not-found.tsx     # Custom 404 with personality
-│   └── globals.css       # Tailwind + custom fonts
-├── components/            # All UI building blocks
-│   ├── Header.tsx        # Sticky nav + social links
-│   ├── Hero.tsx          # The first impression
-│   ├── FeaturedProject.tsx # Library System (star of the show)
-│   ├── ProjectsGrid.tsx  # Other 3 projects
-│   ├── Skills.tsx        # Technical toolbox + AWS progress
-│   ├── Certifications.tsx # CAE, CS50, AWS (with download buttons)
-│   ├── About.tsx         # The human behind the screen
-│   ├── Contact.tsx       # Let's talk + CV download
-│   ├── Footer.tsx        # Simple, humble footer
-│   └── AnimatedSection.tsx # Reusable scroll animation wrapper
-├── public/               # Static assets
-│   ├── certificates/     # PDFs (CAE, CS50, future AWS)
-│   ├── favicon.ico       # My orange "R" logo
-│   └── Ronald_Gonzalez_CV.docx  # Your golden ticket
-└── ...config files       # tailwind, tsconfig, next.config...
-```
 
 <p align="right">(<a href="#readme-top">⬆ back to top</a>)</p>
 
@@ -139,86 +96,16 @@ npm run dev
 
 <p align="right">(<a href="#readme-top">⬆ back to top</a>)</p>
 
----
-
-## 🌍 **Deployment**
-
-This site lives happily on **Vercel** — it’s free, it’s fast, and it’s what I use for all my projects.  
-Every push to `main` triggers a fresh deploy.  
-
-**Live URL:** [https://portfolio-ronalddearmas.vercel.app](https://portfolio-ronald.vercel.app)
-
-Want to deploy your own fork?  
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/RonaldGGA/portfolio)
-
-<p align="right">(<a href="#readme-top">⬆ back to top</a>)</p>
-
----
-
 ## 🤝 **Contributing & Feedback**
-
-I’m actively looking for **Cloud Support Associate / Platform Engineer** roles.  
+I’m actively looking for Cloud Support Associate / Platform Engineer roles.
 If you’re a recruiter or just a curious developer, I’d love to hear from you!
 
-- 🐞 Found a bug? [Open an issue](https://github.com/RonaldGGA/portfolio/issues).  
-- 💡 Have a suggestion? PRs are welcome.  
-- 📧 Want to chat? **ronald.dearmass@email.com**  
+- **🐞 Found a bug? <a href="https://github.com/RonaldGGA/portfolio/issues"><strong>Open an issue</strong></a>.
 
-Also, if you know a good chess opening against the Sicilian, I’m all ears. ♟️
+- **💡 Have a suggestion? PRs are welcome.
 
-<p align="right">(<a href="#readme-top">⬆ back to top</a>)</p>
+- **📧 Want to chat? ronald.dearmass@email.com
 
----
+*Also, if you know a good chess opening against the Sicilian, I’m all ears. ♟️*
 
-## 📜 **License & Legal Stuff**
 
-This project is open source under the **MIT License**.  
-The AWS orange colour is used respectfully as a tribute — no infringement intended.
-
----
-
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=2000&pause=500&color=FF9900&center=true&vCenter=true&width=435&lines=const+future+=+await+hire(ronald);" alt="Typing SVG" />
-  
-  <br />
-  
-  <a href="https://linkedin.com/in/ronald-de-armas-8797082ab">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://github.com/RonaldGGA">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-  <a href="mailto:ronald.dearmass@email.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-  
-  <br />
-  <br />
-  
-  <small>⭐️ Built with ❤️, ☕, and occasional blackouts. 🇨🇺</small>
-</div>
-
-<!-- MARKDOWN LINKS & IMAGES -->
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=0077B5
-[linkedin-url]: https://linkedin.com/in/ronald-de-armas-8797082ab
-[github-shield]: https://img.shields.io/badge/-GitHub-black.svg?style=flat-square&logo=github&colorB=000
-[github-url]: https://github.com/RonaldGGA
-[cambridge-shield]: https://img.shields.io/badge/CAE-C1_Advanced-FF9900?style=flat-square&logo=data:image/svg+xml;base64,...
-[aws-shield]: https://img.shields.io/badge/AWS-Cloud_Practitioner_(in_progress)-FF9900?style=flat-square&logo=amazon-aws
-```
-
----
-
-## 🎯 **Why this README works for recruiters**
-
-| Element                     | Psychology                                                                 |
-| --------------------------- | -------------------------------------------------------------------------- |
-| **Storytelling opening**    | Humans remember stories, not bullet points. You're not a robot.            |
-| **Humour & honesty**        | “Light mode only, just like Havana.” → Memorable, authentic.               |
-| **Chess/blackout metaphors**| Reinforces resilience, strategic thinking — core for cloud support.        |
-| **Badges with personality** | Chess rating, self‑taught years, “Made in Cuba”. Shows you're proud.       |
-| **Clear structure**         | Easy to scan, yet packed with information.                                 |
-| **Call to action**          | “const future = await hire(ronald)” → playful but direct.                  |
-| **Visual appeal**           | Emojis, shields, typing SVG — modern, dev‑credible.                        |
-
----
