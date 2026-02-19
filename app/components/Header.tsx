@@ -3,34 +3,25 @@ import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 w-full bg-white/80  backdrop-blur-sm z-50 border-b border-gray-200 dark:border-slate-800">
-      <div className="section-container py-4! flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-navy dark:text-white">
+    <header className="fixed top-0 w-full bg-white/90 dark:bg-gray-950/90 backdrop-blur-sm z-50 border-b border-gray-200 dark:border-gray-800">
+      <div className="section-container py-4 flex justify-between items-center">
+        <Link
+          href="/"
+          className="text-2xl font-bold text-navy dark:text-white"
+        >
           Ronald<span className="text-aws-orange">.</span>
         </Link>
 
         <nav className="hidden md:flex gap-8 text-sm font-medium">
-          <a href="#projects" className="text-navy   transition">
-            Projects
-          </a>
-          <a
-            href="#skills"
-            className="text-navy  hover:text-aws-orange  transition"
-          >
-            Skills
-          </a>
-          <a
-            href="#certifications"
-            className="text-navy  hover:text-aws-orange  transition"
-          >
-            Certifications
-          </a>
-          <a
-            href="#about"
-            className="text-navy  hover:text-aws-orange  transition"
-          >
-            About
-          </a>
+          {["projects", "skills", "certifications", "about"].map((section) => (
+            <a
+              key={section}
+              href={`#${section}`}
+              className="text-gray-600 dark:text-gray-300 hover:text-aws-orange dark:hover:text-aws-orange capitalize transition"
+            >
+              {section}
+            </a>
+          ))}
         </nav>
 
         <div className="flex gap-4 items-center">
@@ -38,7 +29,7 @@ export default function Header() {
             href="https://github.com/RonaldGGA"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-navy   transition"
+            className="text-gray-600 dark:text-gray-300 hover:text-aws-orange dark:hover:text-aws-orange transition"
           >
             <FiGithub size={20} />
           </a>
@@ -46,13 +37,13 @@ export default function Header() {
             href="https://linkedin.com/in/ronald-de-armas-8797082ab"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-navy   transition"
+            className="text-gray-600 dark:text-gray-300 hover:text-aws-orange dark:hover:text-aws-orange transition"
           >
             <FiLinkedin size={20} />
           </a>
           <a
-            href="mailto:ronald.dearmass@email.com"
-            className="text-navy   transition"
+            href="mailto:ronald.dearmass@gmail.com"
+            className="text-gray-600 dark:text-gray-300 hover:text-aws-orange dark:hover:text-aws-orange transition"
           >
             <FiMail size={20} />
           </a>

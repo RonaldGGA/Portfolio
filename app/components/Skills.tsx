@@ -39,27 +39,30 @@ const skillCategories = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="bg-slate-50">
+    <section id="skills" className="bg-gray-50 dark:bg-gray-900">
       <div className="section-container">
         <AnimatedSection>
           <h2 className="heading">⚙️ Technical Toolbox</h2>
           <p className="subheading">What I use to build, break, and fix.</p>
         </AnimatedSection>
+
         <AnimatedSection delay={0.2}>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {skillCategories.map((cat) => (
               <div
                 key={cat.name}
-                className="bg-white p-6 rounded-xl shadow-sm border border-gray-100"
+                className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700"
               >
-                <h3 className="font-bold text-navy mb-4">{cat.name}</h3>
+                <h3 className="font-bold text-navy dark:text-light-slate mb-4">
+                  {cat.name}
+                </h3>
                 <ul className="space-y-2">
                   {cat.skills.map((skill) => (
                     <li
                       key={skill}
-                      className="text-slate-600 text-sm flex items-center gap-2"
+                      className="text-gray-600 dark:text-gray-400 text-sm flex items-center gap-2"
                     >
-                      <span className="w-1.5 h-1.5 bg-aws-orange rounded-full"></span>
+                      <span className="w-1.5 h-1.5 bg-aws-orange rounded-full flex-shrink-0"></span>
                       {skill}
                     </li>
                   ))}
@@ -68,8 +71,10 @@ export default function Skills() {
             ))}
           </div>
         </AnimatedSection>
+
         <AnimatedSection delay={0.3}>
-          <div className="mt-12 p-6 bg-navy text-white rounded-xl flex flex-col md:flex-row justify-between items-center">
+          {/* Intentionally dark card — AWS certification highlight */}
+          <div className="mt-12 p-6 bg-navy text-white rounded-xl flex flex-col md:flex-row justify-between items-center gap-6">
             <div>
               <p className="text-turquoise font-mono mb-1">
                 🇺🇸 AWS Certification
@@ -82,8 +87,8 @@ export default function Skills() {
                 tests
               </p>
             </div>
-            <div className="mt-4 md:mt-0">
-              <div className="w-32 h-32 bg-white/10 rounded-full flex items-center justify-center border-4 border-turquoise">
+            <div className="flex-0">
+              <div className="w-28 h-28 bg-white/10 rounded-full flex items-center justify-center border-4 border-turquoise">
                 <span className="text-3xl font-bold text-white">85%</span>
               </div>
             </div>

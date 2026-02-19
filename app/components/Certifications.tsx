@@ -39,66 +39,67 @@ const certifications = [
 
 export default function Certifications() {
   return (
-    <section id="certifications" className="section-container">
-      <AnimatedSection>
-        <h2 className="heading">📜 Certifications</h2>
-        <p className="subheading">
-          Formal recognition of my skills and knowledge.
-        </p>
-      </AnimatedSection>
+    <section id="certifications" className="bg-white dark:bg-gray-950">
+      <div className="section-container">
+        <AnimatedSection>
+          <h2 className="heading">📜 Certifications</h2>
+          <p className="subheading">
+            Formal recognition of my skills and knowledge.
+          </p>
+        </AnimatedSection>
 
-      <div className="grid md:grid-cols-2 gap-6">
-        {certifications.map((cert, index) => (
-          <AnimatedSection key={cert.id} delay={0.1 * index}>
-            <div className="card flex gap-4 h-full">
-              <div className="text-aws-orange text-3xl flex-0">{cert.icon}</div>
+        <div className="grid md:grid-cols-3 gap-6">
+          {certifications.map((cert, index) => (
+            <AnimatedSection key={cert.id} delay={0.1 * index}>
+              <div className="card flex gap-4 h-full">
+                <div className="text-3xl flex-0">{cert.icon}</div>
 
-              <div className="flex-1 flex flex-col">
-                <h3 className="font-bold text-navy dark:text-white text-lg mb-1">
-                  {cert.title}
-                </h3>
-                <p className="text-slate-600 dark:text-light-slate text-sm mb-2">
-                  {cert.issuer}
-                </p>
-
-                <p className="text-sm font-mono text-aws-orange mb-1">
-                  {cert.description}
-                </p>
-
-                {cert.detail && (
-                  <p className="text-xs text-slate-500 dark:text-light-slate/70 mb-3">
-                    {cert.detail}
+                <div className="flex-1 flex flex-col">
+                  <h3 className="font-bold text-lg text-navy dark:text-light-slate mb-1">
+                    {cert.title}
+                  </h3>
+                  <p className="text-gray-500 dark:text-gray-400 text-sm mb-2">
+                    {cert.issuer}
                   </p>
-                )}
+                  <p className="text-sm font-mono text-aws-orange mb-1">
+                    {cert.description}
+                  </p>
 
-                {cert.status === "in-progress" ? (
-                  <div className="mt-2">
-                    <div className="w-full bg-gray-200 dark:bg-slate-700 rounded-full h-2 mb-2">
-                      <div
-                        className="bg-aws-orange h-2 rounded-full"
-                        style={{ width: `${cert.progress}%` }}
-                      ></div>
-                    </div>
-                    <p className="text-xs text-slate-500 dark:text-light-slate/70">
-                      Exam: {cert.examDate} · Confidence: {cert.confidence}
+                  {cert.detail && (
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mb-3">
+                      {cert.detail}
                     </p>
-                  </div>
-                ) : (
-                  <div className="mt-3">
-                    <a
-                      href={cert.downloadUrl}
-                      download={cert.filename}
-                      className="inline-flex items-center gap-2 bg-aws-orange text-white px-4 py-2 rounded-md text-xs font-medium hover:bg-opacity-90 transition shadow-sm"
-                    >
-                      <FiDownload size={14} />
-                      Download Certificate
-                    </a>
-                  </div>
-                )}
+                  )}
+
+                  {cert.status === "in-progress" ? (
+                    <div className="mt-auto">
+                      <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mb-2">
+                        <div
+                          className="bg-aws-orange h-2 rounded-full transition-all duration-700"
+                          style={{ width: `${cert.progress}%` }}
+                        />
+                      </div>
+                      <p className="text-xs text-gray-500 dark:text-gray-400">
+                        Exam: {cert.examDate} · Confidence: {cert.confidence}
+                      </p>
+                    </div>
+                  ) : (
+                    <div className="mt-auto pt-3">
+                      <a
+                        href={cert.downloadUrl}
+                        download={cert.filename}
+                        className="inline-flex items-center gap-2 bg-aws-orange text-white px-4 py-2 rounded-md text-xs font-medium hover:opacity-90 transition shadow-sm"
+                      >
+                        <FiDownload size={14} />
+                        Download Certificate
+                      </a>
+                    </div>
+                  )}
+                </div>
               </div>
-            </div>
-          </AnimatedSection>
-        ))}
+            </AnimatedSection>
+          ))}
+        </div>
       </div>
     </section>
   );

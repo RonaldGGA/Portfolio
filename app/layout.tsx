@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ronald González de Armas | Cloud Support Engineer",
+  title: "Ronald González de Armas | Full-Stack Developer",
   description:
-    "Portfolio of Ronald González, self‑taught full‑stack developer and aspiring Cloud Support Engineer.",
+    "Portfolio of Ronald González, self-taught full-stack developer and aspiring Cloud Support Engineer.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     ],
   },
 };
+
 export default function RootLayout({
   children,
 }: {
@@ -29,7 +30,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>{children}</body>
+      <head>
+        {/* Runs before hydration to avoid flash of wrong theme */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.classList.add('dark');
+              }
+            `,
+          }}
+        />
+      </head>
+      <body className="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+        {children}
+      </body>
     </html>
   );
 }

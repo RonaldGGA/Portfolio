@@ -5,7 +5,7 @@ export default function Footer() {
         <p className="text-light-slate text-sm">
           Designed & built by Ronald González de Armas · 2026
         </p>
-        <p className="text-xs text-light-slate mt-2 opacity-80">
+        <p className="text-xs text-light-slate/60 mt-2">
           AWS orange is a trademark of Amazon Web Services. Used with respect.
         </p>
       </div>

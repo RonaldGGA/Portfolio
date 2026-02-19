@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       colors: {
         navy: "#0a192f",
-        slate: "#112240",
+        // Renamed from "slate" to "navy-mid" to avoid collision with Tailwind's built-in slate palette
+        "navy-mid": "#112240",
         "light-slate": "#ccd6f6",
         "aws-orange": "#FF9900",
         turquoise: "#64ffda",
