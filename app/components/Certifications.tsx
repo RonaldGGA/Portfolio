@@ -60,30 +60,16 @@ export default function Certifications() {
                     </p>
                   )}
 
-                  {cert.status === "in-progress" ? (
-                    <div className="mt-auto">
-                      <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mb-2">
-                        <div
-                          className="bg-aws-orange h-2 rounded-full transition-all duration-700"
-                          style={{ width: `${cert.progress}%` }}
-                        />
-                      </div>
-                      <p className="text-xs text-gray-500 dark:text-gray-400">
-                        Exam: {cert.examDate} · Confidence: {cert.confidence}
-                      </p>
-                    </div>
-                  ) : (
-                    <div className="mt-auto pt-3">
-                      <a
-                        href={cert.downloadUrl}
-                        download={cert.filename}
-                        className="inline-flex items-center gap-2 bg-aws-orange text-white px-4 py-2 rounded-md text-xs font-medium hover:opacity-90 transition shadow-sm"
-                      >
-                        <FiDownload size={14} />
-                        Download Certificate
-                      </a>
-                    </div>
-                  )}
+                  <div className="mt-auto pt-3">
+                    <a
+                      href={cert.downloadUrl}
+                      download={cert.filename}
+                      className="inline-flex items-center gap-2 bg-aws-orange text-white px-4 py-2 rounded-md text-xs font-medium hover:opacity-90 transition shadow-sm"
+                    >
+                      <FiDownload size={14} />
+                      Download Certificate
+                    </a>
+                  </div>
                 </div>
               </div>
             </AnimatedSection>
