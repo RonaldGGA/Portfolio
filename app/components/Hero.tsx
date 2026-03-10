@@ -16,17 +16,17 @@ export default function Hero() {
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
               & AI Engineer{" "}
-              <span className="text-aws-orange">(in the making)</span>
+              <span className="text-aws-orange">(in the making)</span>.{" "}
               <span className="font-semibold text-navy dark:text-light-slate">
                 2+ years
               </span>{" "}
-              of project-based experience. Automation Engineering student.{" "}
+              of project-based experience. Automation Engineering student at
+              CUJAE.{" "}
               <span className="font-semibold text-navy dark:text-light-slate">
                 C1 English (CAE 193/210)
               </span>
-              . AWS Cloud Practitioner exam April 2026. I build, break, and fix
-              things — and I&apos;m looking for a remote role where I can do
-              that at scale.
+              . I build, break, and fix things — and I&apos;m looking for a
+              remote role where I can do that at scale.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -51,15 +51,14 @@ export default function Hero() {
                 Download CV
               </a>
             </div>
-
             <div className="mt-12 flex items-center gap-6 text-sm text-gray-500 dark:text-gray-400">
               <span className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
                 Open to work (remote)
               </span>
               <span className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-aws-orange rounded-full"></span>
-                AWS Certified (in progress)
+                <span className="w-2 h-2 bg-turquoise rounded-full"></span>
+                CS50 · CAE C1 certified
               </span>
             </div>
           </div>
