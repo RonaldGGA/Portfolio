@@ -12,11 +12,11 @@ export default function Hero() {
               Ronald González
             </h1>
             <h2 className="text-3xl md:text-5xl font-bold text-gray-500 dark:text-gray-400 mb-6">
-              Cloud Support Engineer{" "}
-              <span className="text-aws-orange">(in the making)</span>
+              Full-Stack Developer
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-              Self-taught full-stack developer with{" "}
+              & AI Engineer{" "}
+              <span className="text-aws-orange">(in the making)</span>
               <span className="font-semibold text-navy dark:text-light-slate">
                 2+ years
               </span>{" "}

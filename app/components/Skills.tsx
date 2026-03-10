@@ -71,29 +71,6 @@ export default function Skills() {
             ))}
           </div>
         </AnimatedSection>
-
-        <AnimatedSection delay={0.3}>
-          {/* Intentionally dark card — AWS certification highlight */}
-          <div className="mt-12 p-6 bg-navy text-white rounded-xl flex flex-col md:flex-row justify-between items-center gap-6">
-            <div>
-              <p className="text-turquoise font-mono mb-1">
-                🇺🇸 AWS Certification
-              </p>
-              <h3 className="text-2xl font-bold mb-2">
-                Cloud Practitioner (CLF-C02)
-              </h3>
-              <p className="text-light-slate">
-                Exam scheduled: April 2026 · Currently scoring 85%+ on practice
-                tests
-              </p>
-            </div>
-            <div className="flex-0">
-              <div className="w-28 h-28 bg-white/10 rounded-full flex items-center justify-center border-4 border-turquoise">
-                <span className="text-3xl font-bold text-white">85%</span>
-              </div>
-            </div>
-          </div>
-        </AnimatedSection>
       </div>
     </section>
   );

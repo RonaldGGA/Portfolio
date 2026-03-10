@@ -8,35 +8,35 @@ export default function FeaturedProject() {
         <AnimatedSection>
           <h2 className="heading">✨ Featured Project</h2>
           <p className="subheading">
-            The one that proves I can troubleshoot production-grade systems.
+            Real-time AI meets industrial engineering.
           </p>
         </AnimatedSection>
         <AnimatedSection delay={0.2}>
-          <div className="bg-linear-to-br from-navy to-navy-mid text-white rounded-2xl p-8 md:p-12">
+          <div className="bg-navy text-white rounded-2xl p-8 md:p-12">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-aws-orange font-mono mb-2">
-                  2025 · Full-stack
+                  2025 · Full-Stack + AI
                 </p>
-                <h3 className="text-3xl font-bold mb-4">
-                  Library Management System
-                </h3>
+                <h3 className="text-3xl font-bold mb-4">SensorWatch AI</h3>
                 <p className="text-light-slate mb-6 leading-relaxed">
-                  A complete book-lending platform with role-based access,
-                  real-time availability, and analytics dashboard. Optimised
-                  query performance by{" "}
-                  <span className="text-turquoise font-semibold">60%</span>{" "}
-                  through strategic indexing and connection pooling. Debugged
-                  JWT expiry, 5xx errors, and image loading bottlenecks.
+                  Industrial sensor monitoring dashboard with{" "}
+                  <span className="text-turquoise font-semibold">
+                    AI-powered anomaly detection
+                  </span>
+                  . Detects out-of-range readings in real time, calls an LLM to
+                  generate maintenance recommendations, and produces weekly AI
+                  reports — all backed by a PostgreSQL audit trail.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {[
                     "Next.js 14",
                     "TypeScript",
-                    "Prisma",
                     "PostgreSQL",
-                    "JWT",
+                    "OpenRouter AI",
+                    "NextAuth",
+                    "Recharts",
                   ].map((tech) => (
                     <span
                       key={tech}
@@ -49,7 +49,7 @@ export default function FeaturedProject() {
 
                 <div className="flex gap-4">
                   <a
-                    href="https://github.com/RonaldGGA/LibraryManagementSystem"
+                    href="https://github.com/RonaldGGA/sensorwatch-ai"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-2 rounded-md font-medium transition"
@@ -57,7 +57,7 @@ export default function FeaturedProject() {
                     <FiGithub /> Code
                   </a>
                   <a
-                    href="https://lms-libraryhub.vercel.app/"
+                    href="https://sensorwatch-ai.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 border border-white text-white px-6 py-2 rounded-md font-medium hover:bg-white/10 transition"
@@ -70,35 +70,39 @@ export default function FeaturedProject() {
               <div className="relative">
                 <div className="bg-white/5 rounded-lg p-6 backdrop-blur-sm border border-white/10">
                   <div className="text-sm font-mono text-turquoise mb-4">
-                    📊 Impact metrics
+                    ⚙️ What it does
                   </div>
                   <ul className="space-y-3 text-light-slate">
                     <li className="flex items-start gap-2">
                       <span className="text-turquoise mt-0.5">▹</span>
                       <span>
-                        <strong className="text-white">60%</strong> faster API
-                        response times
+                        Monitors{" "}
+                        <strong className="text-white">3 sensors</strong> in
+                        real time with 5s polling
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-turquoise mt-0.5">▹</span>
                       <span>
-                        <strong className="text-white">Zero</strong> downtime
-                        after connection pool fix
+                        <strong className="text-white">LLM analysis</strong> on
+                        every anomaly — cause + recommendation
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-turquoise mt-0.5">▹</span>
                       <span>
-                        Handles <strong className="text-white">10k+</strong>{" "}
-                        book records efficiently
+                        <strong className="text-white">
+                          AI weekly reports
+                        </strong>{" "}
+                        summarizing sensor performance trends
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-turquoise mt-0.5">▹</span>
                       <span>
-                        Completely{" "}
-                        <strong className="text-white">functional</strong> app
+                        JWT auth, full{" "}
+                        <strong className="text-white">audit trail</strong> in
+                        PostgreSQL
                       </span>
                     </li>
                   </ul>

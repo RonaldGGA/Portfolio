@@ -33,7 +33,10 @@ export default function About() {
                 . I don&apos;t just fix bugs — I find root causes. I don&apos;t
                 just deploy — I optimise. And I communicate everything clearly
                 in{" "}
-                <span className="font-semibold text-aws-orange">C1 English</span>.
+                <span className="font-semibold text-aws-orange">
+                  C1 English
+                </span>
+                .
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
                 When I&apos;m not coding, I&apos;m playing chess, watching
@@ -45,18 +48,17 @@ export default function About() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.3}>
-            {/* Intentionally dark card for contrast */}
             <div className="bg-navy p-6 rounded-xl border border-navy-mid">
               <h3 className="font-bold text-light-slate mb-4">Quick facts</h3>
               <ul className="space-y-3 text-sm">
                 {[
-                  "📍 Based in Havana, Cuba (remote-ready)",
+                  "📍 Remote",
                   "🗣️ English C1 (CAE 193) · Spanish native",
                   "⚡ 2+ years of daily coding",
                   "♟️ Chess · Volleyball · Personal growth",
                 ].map((fact) => (
                   <li key={fact} className="flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 bg-aws-orange rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="w-1.5 h-1.5 bg-aws-orange rounded-full mt-2 flex--0"></span>
                     <span className="text-light-slate">{fact}</span>
                   </li>
                 ))}

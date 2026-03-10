@@ -15,17 +15,6 @@ const certifications = [
   },
   {
     id: 2,
-    icon: "☁️",
-    title: "AWS Certified Cloud Practitioner",
-    issuer: "Amazon Web Services",
-    description: "Exam scheduled: April 2026",
-    status: "in-progress",
-    progress: 80,
-    examDate: "April 2026",
-    confidence: "80%",
-  },
-  {
-    id: 3,
     icon: "🧠",
     title: "CS50's Introduction to Computer Science",
     issuer: "Harvard University",
@@ -48,7 +37,7 @@ export default function Certifications() {
           </p>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {certifications.map((cert, index) => (
             <AnimatedSection key={cert.id} delay={0.1 * index}>
               <div className="card flex gap-4 h-full">

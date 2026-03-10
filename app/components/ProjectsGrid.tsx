@@ -3,30 +3,33 @@ import AnimatedSection from "./AnimatedSection";
 
 const projects = [
   {
+    title: "Library Management System",
+    description:
+      "Full book-lending platform with role-based access control (admin/librarian/member), loan tracking, and search. Debugged JWT expiry, connection pool 5xx errors, and image delivery bottlenecks.",
+    tech: ["Next.js 14", "TypeScript", "Prisma", "PostgreSQL", "Docker", "JWT"],
+    metrics:
+      "60% faster API response via index optimization · Zero downtime after pool fix",
+    github: "https://github.com/RonaldGGA/LibraryManagementSystem",
+    demo: "https://lms-libraryhub.vercel.app/",
+  },
+  {
     title: "ChessMaster",
     description:
-      "Chess opening trainer with 12,000+ variations and real-time AI suggestions via Stockfish API.",
+      "Chess opening trainer with 12,000+ variations and real-time AI suggestions via Stockfish API. Implemented full-text search and graceful API fallbacks.",
     tech: ["Next.js", "Prisma", "PostgreSQL", "Stockfish API", "Tailwind"],
-    metrics: "12k+ openings, full-text search, 3rd-party API fallback",
+    metrics:
+      "12k+ openings · Full-text search · 3rd-party API fallback handling",
     github: "https://github.com/RonaldGGA/ChessMaster",
     demo: "https://chess-openings-indol.vercel.app/",
   },
   {
     title: "Multi-Tenant Store Dashboard",
     description:
-      "E-commerce admin panel for multiple stores. Solved state inconsistency bugs and CORS issues.",
-    tech: ["Next.js 14", "Prisma", "PostgreSQL", "Vercel", "Tailwind"],
-    metrics: "Edge deployment, 40% re-render reduction",
-    github: "https://github.com/RonaldGGA/e-commerce-dashboard",
-    demo: null,
-  },
-  {
-    title: "AWS Support Toolkit",
-    description:
-      "CLI tool to diagnose EC2, IAM, and network issues. Built with Python, Click, and pytest.",
-    tech: ["Python", "boto3", "pytest", "Click"],
-    metrics: "80%+ test coverage, 3 diagnostic modules (WIP)",
-    github: "https://github.com/RonaldGGA/AWSSupportToolkit",
+      "E-commerce admin panel for multiple stores with dynamic inventory, orders, and role management. Resolved state inconsistency bugs and CORS issues.",
+    tech: ["Next.js 14", "Prisma", "PostgreSQL", "Tailwind", "Vercel"],
+    metrics:
+      "40% re-render reduction via React DevTools profiling · Edge deployment",
+    github: "https://github.com/RonaldGGA",
     demo: null,
   },
 ];
@@ -37,7 +40,9 @@ export default function ProjectsGrid() {
       <div className="section-container">
         <AnimatedSection>
           <h2 className="heading">📁 Other Projects</h2>
-          <p className="subheading">Real applications, real bugs, real fixes.</p>
+          <p className="subheading">
+            Real applications, real bugs, real fixes.
+          </p>
         </AnimatedSection>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

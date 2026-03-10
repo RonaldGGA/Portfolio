@@ -11,7 +11,7 @@ export default function Contact() {
             <p className="subheading">
               I&apos;m actively seeking a{" "}
               <span className="font-semibold text-navy dark:text-light-slate">
-                Cloud Support Associate
+                seeking a remote Full-Stack or AI engineering
               </span>{" "}
               role. If you need a problem-solver who codes, let&apos;s connect.
             </p>
@@ -48,14 +48,6 @@ export default function Contact() {
                 Download CV
               </a>
             </div>
-
-            <p className="text-sm text-gray-500 dark:text-gray-400 mt-12">
-              Prefer a video intro?{" "}
-              <span className="text-aws-orange font-semibold">
-                I recorded a 3-min demo
-              </span>{" "}
-              of my Library System — available upon request.
-            </p>
           </div>
         </AnimatedSection>
       </div>
