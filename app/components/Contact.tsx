@@ -11,9 +11,10 @@ export default function Contact() {
             <p className="subheading">
               I&apos;m actively seeking a{" "}
               <span className="font-semibold text-navy dark:text-light-slate">
-                seeking a remote Full-Stack or AI engineering
-              </span>{" "}
-              role. If you need a problem-solver who codes, let&apos;s connect.
+                remote Full-Stack or Frontend role
+              </span>
+              . If you need someone who ships production code with real metrics
+              behind it, let&apos;s connect.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 mt-8">

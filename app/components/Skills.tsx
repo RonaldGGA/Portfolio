@@ -2,37 +2,63 @@ import AnimatedSection from "./AnimatedSection";
 
 const skillCategories = [
   {
-    name: "Cloud & DevOps",
+    name: "Frontend",
     skills: [
-      "AWS (in progress)",
-      "Docker",
-      "Vercel",
-      "Git/GitHub",
-      "CI/CD basics",
+      "React · Next.js 16 (App Router, RSC, ISR)",
+      "TypeScript strict mode",
+      "Tailwind CSS v4 · shadcn/ui",
+      "Framer Motion",
+      "Core Web Vitals · LCP optimization",
+    ],
+  },
+  {
+    name: "GraphQL & CMS",
+    skills: [
+      "Apollo Client",
+      "@apollo/client-integration-nextjs",
+      "Contentful (Headless CMS)",
+      "Schema design · Normalized cache",
+      "ISR + webhook revalidation",
     ],
   },
   {
     name: "Backend & DB",
     skills: [
-      "Next.js API",
-      "tRPC",
-      "REST",
-      "PostgreSQL",
-      "Prisma",
-      "SQL optimisation",
+      "Node.js · Next.js API Routes",
+      "Server Actions · REST APIs",
+      "PostgreSQL · Prisma ORM (Neon)",
+      "Redis (Upstash) · TTFB optimization",
+      "Better Auth · RBAC",
     ],
   },
   {
-    name: "Frontend",
-    skills: ["React", "Next.js 14", "TypeScript", "Tailwind", "shadcn/ui"],
+    name: "AI & Testing",
+    skills: [
+      "Gemini API · OpenRouter",
+      "LLM prompt engineering",
+      "Structured JSON outputs",
+      "Vitest · Testing Library",
+      "Playwright (E2E)",
+    ],
   },
   {
-    name: "Troubleshooting",
+    name: "SEO & Performance",
     skills: [
-      "Root cause analysis",
-      "Debugging (DevTools, logs)",
-      "API integration",
-      "Error handling",
+      "generateMetadata · JSON-LD",
+      "Dynamic OG images (@vercel/og)",
+      "sitemap.xml · robots.txt",
+      "next/image · next/font/local",
+      "Bundle analysis · ISR",
+    ],
+  },
+  {
+    name: "DevOps",
+    skills: [
+      "Docker · Git/GitHub",
+      "Vercel · CI/CD",
+      "Linux",
+      "SQL index optimization",
+      "Connection pooling (Neon)",
     ],
   },
 ];
@@ -47,7 +73,7 @@ export default function Skills() {
         </AnimatedSection>
 
         <AnimatedSection delay={0.2}>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {skillCategories.map((cat) => (
               <div
                 key={cat.name}
@@ -60,9 +86,9 @@ export default function Skills() {
                   {cat.skills.map((skill) => (
                     <li
                       key={skill}
-                      className="text-gray-600 dark:text-gray-400 text-sm flex items-center gap-2"
+                      className="text-gray-600 dark:text-gray-400 text-sm flex items-start gap-2"
                     >
-                      <span className="w-1.5 h-1.5 bg-aws-orange rounded-full flex-shrink-0"></span>
+                      <span className="w-1.5 h-1.5 bg-aws-orange rounded-full shrink-0 mt-1.5"></span>
                       {skill}
                     </li>
                   ))}
