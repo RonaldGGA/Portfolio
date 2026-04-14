@@ -25,7 +25,7 @@ export default function Contact() {
                 <FiMail /> ronald.dearmass@gmail.com
               </a>
               <a
-                href="https://linkedin.com/in/ronald-de-armas-8797082ab"
+                href="https://www.linkedin.com/in/ronald-gonz%C3%A1lez-de-armas-8797082ab"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-2 border-navy dark:border-light-slate text-navy dark:text-light-slate px-6 py-3 rounded-md font-medium hover:bg-navy dark:hover:bg-navy-mid hover:text-white dark:hover:border-navy-mid transition flex items-center gap-2"

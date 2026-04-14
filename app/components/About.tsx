@@ -58,7 +58,7 @@ export default function About() {
                   "♟️ Chess · Volleyball · Anime",
                 ].map((fact) => (
                   <li key={fact} className="flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 bg-aws-orange rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="w-1.5 h-1.5 bg-aws-orange rounded-full mt-2 shrink-0"></span>
                     <span className="text-light-slate">{fact}</span>
                   </li>
                 ))}
